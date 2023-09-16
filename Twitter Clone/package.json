@@ -2,7 +2,7 @@
   "name": "twitter-gui-clon",
   "version": "1.0.0",
   "description": " simple Twitter GUI clone project using html and css",
-  "author": "sajith dilshan",
+  "author": "Sumalya Chatterjee",
   "license": "MIT",
   "dependencies": {
     "reset.css": "^2.0.2"
