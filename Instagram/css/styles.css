@@ -1,0 +1,513 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #262626;
+    overflow-x: hidden;
+    background: #FAFAFA;
+}
+
+ion-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* CSS Footer */
+footer {
+    display: none;
+    height: 54px;
+    width: 100%;
+    background:#FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    z-index: 2;
+    border: 1px solid #DBDBDB;
+}
+
+/* CSS Header */
+header {
+    height: 54px;
+    width: 100%;
+    background:#FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 2;
+    border: 1px solid #DBDBDB;
+}
+
+header.desktop {
+    display: flex;
+}
+
+header.mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.mobile ion-icon {
+    margin: auto 20px;
+}
+
+.top-container {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.top-logo {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-logo img {
+    cursor: pointer;
+}
+
+.top-logo ion-icon{
+    font-size: 22px;
+}   
+
+.spacer {
+    width: 1px;
+    background: #E4E4E4;
+}
+
+.top-container .vertical {
+    height: 22px;
+}
+
+.top-container input{
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.top-container input::placeholder {
+    color: #979797;
+    opacity: 1;
+}
+
+.top-icons {
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-icons ion-icon{
+    font-size: 22px;
+}
+
+/* CSS Conteúdo da página */
+main{
+    width: 935px;
+    margin: 88px auto 0;
+    display: flex;
+} 
+
+.main-feed {
+    width: 614px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+/* CSS Stories */
+.stories {
+    width: 614px;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.stories ion-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.story {
+    width: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.story span {
+    width: 78px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.story div {
+    width: 66px;
+    height: 66px;
+    background-image: url(../assets/img/stories_background.png);
+    background-size: 66px 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.story img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+/* CSS Posts */
+.posts {
+    width: 614px;
+    margin-bottom: 60px;
+}
+
+.post {
+    width: 614px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+.post-top {
+    height: 54px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0px 15px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.post-top div {
+    display: flex;
+    align-items: center;
+}
+
+.post-top img:first-of-type {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+video {
+    width: 612px;
+}
+
+.post-interactions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
+
+.post-interactions ion-icon {
+    margin: 0 5px;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16.41px;
+    margin-bottom: 10px;
+}
+
+.likes strong {
+    cursor: pointer;
+}
+
+.likes img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.post-description {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16.41px;
+    margin-bottom: 10px;
+    padding: 0px 18px;
+}
+
+.post-description strong {
+    cursor: pointer;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 16.41px;
+    padding: 0px 18px;
+}
+
+.comments strong {
+    cursor: pointer;
+}
+
+.comments h1 {
+    color: #8E8E8E;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.comments p {
+    margin-bottom: 5px; 
+}
+
+.comments h2 {
+    font-size: 12px;
+    line-height: 14.41px;
+    color: #8E8E8E;
+    margin-bottom: 5px;
+}
+
+.comment-input {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    justify-content: center;
+    gap: 15px;
+}
+
+.comment-input input {
+    width: 460px;
+    border: none;
+}
+
+.comment-input button {
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #B2DFFC;
+    background-color: #FFFFFF;
+    border: none;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.comment-input button:hover {
+    color: #0095F6;
+}
+
+/* CSS Barra Lateral */
+aside {
+    width: 293px;
+    margin-left: 28px;
+}
+
+.sidebar {
+    width: 293px;
+    height: 443px;
+    left: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 88px;
+}
+
+.sidebar .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .profile img {
+    width: 56px;
+    height: 56px;
+    margin:22px 17px 22px 0px;
+    cursor: pointer;
+}
+
+.sidebar  h1 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8E8E8E;
+}
+
+.suggestions p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.suggestions p strong{
+    color: #262626;
+    cursor: pointer;
+}
+
+.suggestions li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestions li span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #139EF2;
+    cursor: pointer;
+}
+
+.sidebar div div {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-start;
+    width: 100%;
+    line-height: 18px;
+}
+
+.sidebar .subtitle {
+    font-size: 12px;
+    line-height: 22px;
+    color: #8E8E8E;
+}
+
+.sidebar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin:8px 5px;
+    cursor: pointer;
+}
+
+.sidebar .nav {
+    margin-top: 15px;
+    color: #C7C7C7;
+    font-size: 11px;
+    margin: 10px 0px;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+/* CSS Páginas menores que 935px */
+@media (max-width: 935px) {
+    .top-container {
+        width: 95%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: auto;
+        justify-content: center;
+    }
+}
+
+/* CSS Páginas menores que 614px - Modo Mobile */
+@media (max-width: 614px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    header.desktop {
+        display: none;
+    }
+
+    header.mobile {
+        display: flex;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: 60px 0 0;
+    }
+
+    .main-feed {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stories {
+        height: 121px;
+        border: none;
+        background: #FAFAFA;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stories ion-icon {
+        display: none;
+    }
+
+    .posts {
+        width: 100%;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+    }
+}
